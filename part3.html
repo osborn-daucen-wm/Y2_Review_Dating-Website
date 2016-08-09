@@ -3,20 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>DateR</title>
+    <link rel="stylesheet" href="part2.css" type="text/css">
+    <style>
+  article, aside, figure, footer, header, hgroup,
+  menu, nav, section { display: block; }
+</style>
 </head>
+<script type="text/javascript">
+function readURL(input) {
+     if (input.files && input.files[0]) {
+         var reader = new FileReader();
+         reader.onload = function (e) {
+             $('#blah')
+                 .attr('src', e.target.result)
+                 .width(150)
+                 .height(200);
+         };
+         reader.readAsDataURL(input.files[0]);
+     }
+ }
+</script>
 <body>
+  <input type='file' onchange="readURL(this);" />
+  <img id="blah" src="#" alt="your image" />
 <h1>Please Enter Your Details For Our Dating Website!</h1>
 <fieldset>
     <legend>Your Face</legend>
-    <label for="avatar">Your Image: </label><input required type="file"><br>
-    <label for="preview">Image Preview: </label><img id="preview" src="">
+    <label class="normalLabel" for="avatar">Your Image: </label><input required type="file"><br>
+    <label class="normalLabel" for="preview">Image Preview: </label><img id="preview" src="">
 </fieldset>
 
 <fieldset>
     <legend>Your General Details</legend>
-    <label for="name">Name: </label><input required type="text"><br>
+    <label class="normalLabel" for="name">Name: </label><input required type="text"><br>
     <!--Gender: <input class="autoWidth" required type="radio"><br>-->
-    <label for="gender">Gender: </label>
+    <label class="normalLabel" for="gender">Gender: </label>
         <select>
             <option>Pick One</option>
             <option>Abimegender</option>
@@ -75,7 +96,7 @@
             <option>Exgender</option>
             <option>Existigender</option>
             <option>Female</option>
-            <option>Femfluid</option>
+            <option>Femfluid<
             <option>Femgender</option>
             <option>Fluidflux</option>
             <option>Gemigender</option>
@@ -134,10 +155,10 @@
             <option>Vocigender</option>
             <option>Not Listed</option>
         </select><br>
-    <label for="age">Age: </label><input required type="number"><br>
-    <label for="dateOfBirth">Date of Birth: </label><input required type="date"><br>
-    <label for="color">Favorite Color: </label><input required type="color"><br>
-    <label for="country">Which Country: </label>
+    <label class="normalLabel" for="age">Age: </label><input required type="number"><br>
+    <label class="normalLabel" for="dateOfBirth">Date of Birth: </label><input required type="date"><br>
+    <label class="normalLabel" for="color">Favorite Color: </label><input required type="color"><br>
+    <label class="normalLabel" for="country">Which Country: </label>
         <select>
             <option>United States</option>
             <option>France</option>
@@ -150,19 +171,19 @@
 
 <fieldset>
     <legend>Your Indicators</legend>
-    <label for="height">Height: </label><label for="Short">Short</label><input required type="range" min="0" max="100"><label for="Tall">Tall</label><br>
-    <label for="salary">Salary: </label><label for="Poor">Poor</label><input required type="range" min="0" max="100"><label for="Rich">Rich</label><br>
+    <div class="slider"><label class="normalLabel" for="height">Height: </label><div class="sliderLeft"> <label class="leftSlider" for="Short">Short</label></div><input required type="range" min="0" max="100"><div class="sliderRight"> <label class="rightSlider" for="Tall">Tall</label> </div></div><br>
+    <div class="slider"><label class="normalLabel" for="salary">Salary: </label><div class="sliderLeft"> <label class="leftSlider" for="Poor">Poor</label></div><input required type="range" min="0" max="100"><div class="sliderRight"> <label class="rightSlider" for="Rich">Rich</label> </div></div><br>
 </fieldset>
 
 <fieldset>
     <legend>Your Contact Information</legend>
-    <span><label for="email">Email: </label><input required type="email"></span><br>
-    <span><label for="mobile">Mobile: </label><input required type="tel"></span><br>
-    <label for="address">Address: <textarea></textarea><br>
+    <span><label class="normalLabel" for="email">Email: </label><input required type="email"></span><br>
+    <span><label class="normalLabel" for="mobile">Mobile: </label><input required type="tel"></span><br>
+    <label class="normalLabel" for="address">Address: </label><textarea></textarea><br>
     Method to Contact You:
-    <input class="autoWidth" required type="checkbox"><label for="emailCheck">Email</label>
-    <input class="autoWidth" required type="checkbox"><label for="Whatsapp">Whatsapp</label>
-    <input class="autoWidth" required type="checkbox"><label for="InAppChat">In-app chat</label><br>
+    <input class="autoWidth" required type="checkbox">Email
+    <input class="autoWidth" required type="checkbox">Whatsapp
+    <input class="autoWidth" required type="checkbox">In-app chat<br>
 </fieldset>
 <input required type="submit">
 </body>

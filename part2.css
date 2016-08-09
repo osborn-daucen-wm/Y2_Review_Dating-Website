@@ -5,14 +5,45 @@ fieldset {
     width: 720px;
 }
 
-label {
+.normalLabel {
     width: 180px;
     display: inline-block;
     text-align: right;
 }
 
-fieldset label input {
+.autoWidth {
     width: auto;
 }
 
-fieldset
+.leftSlider {
+    text-align: center;
+    width: inherit;
+    text-align: inherit;
+}
+
+.rightSlider {
+    text-align: center;
+    width: inherit;
+    text-align: inherit;
+}
+
+textarea {
+    width: 360px;
+    height: 50px;
+}
+
+.sliderRight {
+    width: 45px;
+    background: purple;
+    text-align: center;
+    color: #fff;
+    font-family: monospace;
+}
+
+.sliderLeft {
+    width: 45px;
+    background: #d41107;
+    text-align: center;
+    color: #fff;
+    font-family: monospace;
+}
