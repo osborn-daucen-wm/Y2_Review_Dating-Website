@@ -17,14 +17,18 @@ fieldset {
 
 .leftSlider {
     text-align: center;
-    width: inherit;
-    text-align: inherit;
+    width: 55px;
+    background: #d41107;
+    color: #fff;
+    font-family: monospace;
 }
 
 .rightSlider {
     text-align: center;
-    width: inherit;
-    text-align: inherit;
+    width: 55px;
+    background: purple;
+    color: #fff;
+    font-family: monospace;
 }
 
 textarea {
@@ -47,3 +51,4 @@ textarea {
     color: #fff;
     font-family: monospace;
 }
+

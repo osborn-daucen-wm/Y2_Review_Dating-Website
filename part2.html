@@ -7,6 +7,7 @@
 </head>
 <body>
 <h1>Please Enter Your Details For Our Dating Website!</h1>
+<form>
 <fieldset>
     <legend>Your Face</legend>
     <label class="normalLabel" for="avatar">Your Image: </label><input required type="file"><br>
@@ -151,8 +152,18 @@
 
 <fieldset>
     <legend>Your Indicators</legend>
-    <div class="slider"><label class="normalLabel" for="height">Height: </label><div class="sliderLeft"> <label class="leftSlider" for="Short">Short</label></div><input required type="range" min="0" max="100"><div class="sliderRight"> <label class="rightSlider" for="Tall">Tall</label> </div></div><br>
-    <div class="slider"><label class="normalLabel" for="salary">Salary: </label><div class="sliderLeft"> <label class="leftSlider" for="Poor">Poor</label></div><input required type="range" min="0" max="100"><div class="sliderRight"> <label class="rightSlider" for="Rich">Rich</label> </div></div><br>
+    <!--<div class="slider">-->
+        <label class="normalLabel" for="height">Height: </label>
+    <!--<div class="sliderLeft">--> <label class="leftSlider" for="Short">Short</label>
+    <!--</div>--><input required type="range" min="0" max="100">
+    <!--<div class="sliderRight">-->
+    <label class="rightSlider" for="Tall">Tall</label>
+    <!--</div></div>--><br>
+    <!--<div class="slider">--><label class="normalLabel" for="salary">Salary: </label>
+    <!--<div class="sliderLeft">--> <label class="leftSlider" for="Poor">Poor</label>
+    <!--</div>--><input required type="range" min="0" max="100">
+    <!--<div class="sliderRight">--> <label class="rightSlider" for="Rich">Rich</label>
+    <!--</div></div>--><br>
 </fieldset>
 
 <fieldset>
@@ -160,11 +171,12 @@
     <span><label class="normalLabel" for="email">Email: </label><input required type="email"></span><br>
     <span><label class="normalLabel" for="mobile">Mobile: </label><input required type="tel"></span><br>
     <label class="normalLabel" for="address">Address: </label><textarea></textarea><br>
-    Method to Contact You:
+    <label class="normalLabel" for="contactMethod">Method to Contact You: </label>
     <input class="autoWidth" required type="checkbox">Email
     <input class="autoWidth" required type="checkbox">Whatsapp
     <input class="autoWidth" required type="checkbox">In-app chat<br>
 </fieldset>
 <input required type="submit">
+</form>
 </body>
 </html>
